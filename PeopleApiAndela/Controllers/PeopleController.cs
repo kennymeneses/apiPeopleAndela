@@ -34,12 +34,12 @@ namespace PeopleApiAndela.Controllers
         }
 
         [HttpGet("{personId}")]
-        public async Task<IActionResult> GetSpecifiedProfile(int profileId)
+        public async Task<IActionResult> GetSpecifiedProfile(int personId)
         {
             try
             {
                 //var clientes = await _manejadorOrdenes.ObtenerHistoricoClienteMesActual(dni);
-                var profile = await _manager.GetSpecifiedPeople(profileId);
+                var profile = await _manager.GetSpecifiedPeople(personId);
 
                 return Ok(profile);
             }

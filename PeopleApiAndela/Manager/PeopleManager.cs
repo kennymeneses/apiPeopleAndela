@@ -7,7 +7,7 @@ namespace PeopleApiAndela.Manager
 {
     public class PeopleManager : IPeopleManager
     {
-        private string urlJobProfileApi = "https://andelajobapidemo.azurewebsites.net/api/jobProfiles";
+        private string urlJobProfileApi = "https://andelajobapidemo.azurewebsites.net/api/jobProfiles/";
         private DataContext _context;
 
         public PeopleManager(DataContext context)
